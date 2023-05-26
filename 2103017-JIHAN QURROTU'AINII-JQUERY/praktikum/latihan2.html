@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pengenalan jQuery - Slide</title>
+        <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="flip">Berita Terbaru</div>
+                <div class="panel-body">
+                    <h3>Mahasiswa Polindra meraih juara pertama Web tingkat Nasional</h3>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assests/jquery.js"></script>
+        <script src="assests/bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#slide").hide();
+                $("#flip").click(function () {
+                    $("#slide").slideDown("slow");
+                });
+            });
+        </script>
+    </body>
+</html>

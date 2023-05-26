@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Home</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button
+				type="button"
+				class="navbar-toggle collapsed"
+				data-toggle="collapse"
+				data-target="#bs-example-navbar-collapse-1"
+				aria-expended="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Halaman Web</a>
+			</div>
+			<div
+			class="collapse navbar-collapse"
+			id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active">
+				<a href="index.html">Home</a></li>
+				<li><a href="biografi.html">Biografi</a></li>
+				<li><a href="galeri.html">Galeri</a></li>
+				<li><a href="kontak.html">Kontak</a></li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<center><h1>PENJELASAN</h1></center>
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0"
+					class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<center><div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<a href="kagura.html"><img src="img/kagura.jpg" alt="kagura" width="60%" /></a>
+						<div class="carousel-caption d-none d-md-block"></div>
+						<h2>KAGURA</h2>
+						<p>Kagura adalah salah satu hero yang ada di Mobile Legend dan banyak digunakan oleh usernya.</p>
+					</div>
+					<div class="item">
+						<a href="kemarau.html"><img src="img/kemarau.jpg" alt="kemarau" width="60%" /></a>
+						<div class="carousel-caption d-none d-md-block"></div>
+						<h2>KEMARAU</h2>
+						<p>Kemarau atau juga disebut musim kering adalah musim di daerah tropis yang dipengaruhi oleh sistem musim. Kurun waktu tertentu disebut musim kemarau jika curah hujan per bulan berada di bawah 60 mm per bulan atau 20 mm per dasarian selama 3 dasarian secara berturut-turut.</p>
+					</div>
+					<div class="item">
+						<a href="kucing.html"><img src="img/kucing.jpg" alt="kucing" width="60%" /></a>
+						<div class="carousel-caption d-none d-md-block"></div>
+						<h2>Kucing</h2>
+						<p>Kucing adalah makhluk hidup yang di darat dan sejenis mamalia karnivora.</p>
+					</div>
+					<div class="item">
+						<a href="panda.html"><img src="img/panda.jpg" alt="panda" width="60%" /></a>
+						<div class="carousel-caption d-none d-md-block"></div>
+						<h2>Panda</h2>
+						<p>Panda adalah seekor mamalia yang biasanya diklasifikasikan ke dalam keluarga beruang, yang merupakan hewan asli Tiongkok Tengah. Panda tinggal di wilayah pegunungan. seperti Tibet.</p>
+					</div>
+                    <div class="item">
+						<a href="salju.html"><img src="img/salju.jpg" alt="salju" width="60%" /></a>
+						<div class="carousel-caption d-none d-md-block">
+							<h2>SALJU</h2>
+							<p>Salju (dari bahasa Arab ثلج, salji) adalah bentuk padat air yang jatuh ke bumi dari atmosfer atau awan yang telah membeku menjadi kristal padat dan seperti hujan yang menutupi secara permanen atau sementara (23 persen) dari seluruh permukaan bumi.</p></center>
+			        </div></center>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+			<h3>Form Komentar</h3>
+		<form name="form" action="" method="post">
+			<div class="form-group">
+				<label for="komentar" class="form-label">Silahkan Berikan Komentar Anda</label>
+				<input type="text" class="form-control" id="komentar" name="komentar" />
+			</div>
+			<button type="submit" class="btn btn-primary">Kirim</button>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/jquery-3.6.0.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".carousel").carousel({
+				interval: 2000,
+		  });
+		});
+	</script>
+
+
+</body>
+</html>
